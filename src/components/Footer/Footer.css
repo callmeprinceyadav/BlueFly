@@ -1,0 +1,34 @@
+.footer{
+    /* border: 2px solid black; */
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer_links{
+    /* border: 2px solid red; */
+    width: 20%;
+    padding: auto;
+    ;
+}
+
+.footer_links_container_item{
+    text-decoration: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.footer_section{
+    /* border: 2px solid black; */
+    /* margin: auto; */
+    width:25%;
+    padding: 60px;
+}
+
+.footer_fill{
+    /* border: 2px solid green !important; */
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+}
