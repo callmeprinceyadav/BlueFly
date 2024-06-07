@@ -21,12 +21,18 @@ const Home = () => {
     return (
         <>
             <div className="Head">
-                <div>
-                    <marquee><strong>Welcome To BlueFly: </strong> Luxury Brand At Discounted Price</marquee>
+                <div className='marquesection'>
+                    <strong><marquee className="marque">Welcome To BlueFly: Luxury Brand At Discounted Price</marquee></strong>
+
                 </div>
+                <Box w="100%">
+                    <Image objectFit='cover' width="100%" src='https://bluefly.com/cdn/shop/files/STEP_INTO_THE_SUN_-_BANNER_1200X200_1_1600x.jpg?v=1717717279'></Image>
+                </Box>
                 <div> <ImageSlider /> </div>
 
             </div>
+
+
 
 
 

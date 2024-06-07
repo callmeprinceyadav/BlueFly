@@ -33,7 +33,7 @@ const Navbar = () => {
             <p>ACCESSORIES</p>
             <p>HOME</p>
             <p>UNDER $50</p>
-            <p>CLEARENCE</p>
+            <p style={{ color:"red"}}>CLEARENCE</p>
         </div>
 
     </>

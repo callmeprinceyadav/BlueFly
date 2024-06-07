@@ -1,6 +1,6 @@
 
 .Head{
-    border: 2px solid Black;
+    /* border: 2px solid Black; */
     /* background-color: black; */
     height: 100vh;
     text-align: center;
@@ -13,6 +13,14 @@
     cursor: pointer;
 }
 
+.marque{
+  font-size: 20px;
+  color: white;
+}
+.marquesection{
+  background-color: black;
+  
+}
 .sliderpic> img{
     /* width: 90%; */
     height: 660px;
