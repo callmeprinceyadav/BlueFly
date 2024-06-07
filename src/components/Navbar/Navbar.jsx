@@ -28,7 +28,7 @@ const Navbar = () => {
             <p>SHOES</p>
             <p>HANDBAGS</p>
             <p>DESIGNERS</p>
-            <p>SUNGLASSES</p>
+            <p>SUNGLASSES</p>   
             <p>JEWELRY & WATCHES</p>
             <p>ACCESSORIES</p>
             <p>HOME</p>
