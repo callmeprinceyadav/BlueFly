@@ -1,7 +1,75 @@
-h1{
+h1 {
     font-family: Tiemann, serif;
     font-weight: 400;
     letter-spacing: 0em;
     line-height: 1;
     text-transform: uppercase;
 }
+
+.mainbox {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .formsection {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    width: auto;
+    padding: 30px;
+    gap: 20px;
+    justify-content: center;
+    font-family: Tiemann, serif;
+  }
+  
+  .formsection h1 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .formsection input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .formsection button {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-weight: 700;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    font-family: Helvetica;
+  }
+  
+  /* Styles for smaller screens */
+  @media (max-width: 600px) {
+    .mainbox {
+      padding: 10px;
+      margin-top: 30px;
+    }
+  
+    .formsection {
+      width: 90%;
+      padding: 20px;
+      gap: 15px;
+    }
+  
+    .formsection h1 {
+      font-size: 1.5em;
+    }
+  
+    .formsection input,
+    .formsection button {
+      width: 100%;
+    }
+  }
+  
