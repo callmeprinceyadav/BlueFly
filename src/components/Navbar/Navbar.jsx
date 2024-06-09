@@ -1,9 +1,18 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import './Navbar.css'; // Import your CSS file for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
+
+
+  const navigate = useNavigate();
+
+  const login = () => {
+    navigate("/login");
+  };
+
   return (
     <>
     <nav className="navbar">
@@ -16,7 +25,7 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faUser} />
         </button>
         <button className="navbar__icon-btn">Sign Up</button>
-        <button className="navbar__icon-btn">Login</button>
+        <button className="navbar__icon-btn" onClick={login}>Login</button>
         <button className="navbar__icon-btn">
           <FontAwesomeIcon icon={faShoppingCart} />
         </button>
