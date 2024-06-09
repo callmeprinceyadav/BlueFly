@@ -1,5 +1,5 @@
-import { textDecoration } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { Box, VStack, Input, Button, Heading, Text } from '@chakra-ui/react';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -19,61 +19,55 @@ const Login = () => {
     }
   };
 
-  const handleRegister = () => {
-    if (!email || !password) {
-      setError('Both fields are required');
-      return;
-    }
-
-    localStorage.setItem('email', email);
-    localStorage.setItem('password', password);
-    setError('');
-    alert('Registration successful');
-  };
-
   return (
-    <div style={{ display: "flex", justifyContent: "center", padding: "20px", marginTop: "50px" }}>
-      <div style={{
-        display: "flex",
-        borderRadius:"5px",
-        flexDirection: "column",
-        width: "30%",
-        padding: "30px",
-        gap: "20px",
-        justifyContent: "center",
-        boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
-      }}>
-        <h1 style={{ fontFamily: "Tiemann, serif", textAlign: "center",textDecoration:"underline" }}>
+    <Box display="flex" justifyContent="center" padding="20px" marginTop="50px">
+      <Box
+        display="flex"
+        flexDirection="column"
+        width={{ base: "90%", md: "50%", lg: "40%" }}
+        padding="40px"
+        gap="20px"
+        justifyContent="center"
+        boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
+        borderRadius="5px"
+      >
+        <Heading as="h1" size="lg" textAlign="center" textDecoration="underline" fontFamily="Tiemann, serif">
           LOGIN
-        </h1>
-        <input
-          style={{ padding: "10px" }}
-          type="email"
-          placeholder='Enter Your Email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          style={{ padding: "10px" }}
-          type="password"
-          placeholder='Enter Your Password'
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        {error && <div style={{ color: 'red', textAlign: 'center' }}>{error}</div>}
-        <button
-          style={{ padding: "10px", width: "20%", margin: "auto" ,cursor:"pointer",fontFamily:"Helvetica", fontWeight:"700"}}
-          type='button'
-          onClick={handleLogin}
-          
-        >
-          LOGIN
-        </button>
-        
-      </div>
-    </div>
+        </Heading>
+        <VStack spacing={4}>
+          <Input
+            padding="12px"
+            w="l"
+            type="email"
+            placeholder="Enter Your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <Input
+            padding="12px"
+            type="password"
+            placeholder="Enter Your Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          {error && <Text color="red.500" textAlign="center">{error}</Text>}
+          <Button
+            padding="12px"
+            width="50%"
+            margin="auto"
+            cursor="pointer"
+            fontFamily="Helvetica"
+            fontWeight="700"
+            colorScheme="teal"
+            onClick={handleLogin}
+          >
+            LOGIN
+          </Button>
+        </VStack>
+      </Box>
+    </Box>
   );
 }
 

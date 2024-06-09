@@ -12,12 +12,15 @@ const Navbar = () => {
   const login = () => {
     navigate("/login");
   };
+  const logo = () => {
+    navigate("/");
+  };
 
   return (
     <>
     <nav className="navbar">
       <div className="navbar__logo">
-        <img  className='navbar__logo__pic' src='https://www.bluefly.com/cdn/shop/files/BLUEFLY-LOGO-11-20.png?v=1613183141' alt='Bluefly logo' />
+        <img onClick={logo} style={{ cursor:"pointer"}} className='navbar__logo__pic' src='https://www.bluefly.com/cdn/shop/files/BLUEFLY-LOGO-11-20.png?v=1613183141' alt='Bluefly logo' />
       </div>
       
         
