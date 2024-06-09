@@ -59,7 +59,7 @@
     flex-wrap: wrap;
   }
   .Category > p{
-    /* font-size: 15px; */
+    font-size: 15px;
     /* margin: 10px; */
     /* margin-bottom: -10px; */
   }
@@ -111,11 +111,19 @@
     }
   }
 
+  
+
   .navbar__icon-btn {
     background: none;
     border: none;
     color: rgb(0, 0, 0);
     cursor: pointer;
     margin-top: 10px;
+  }
+
+  @media (max-width: 550px) {
+    .Category{
+      display: none;
+    }
   }
   

@@ -1,11 +1,12 @@
 import React from 'react';
 import './Home.css'; //
-import Slider from 'react-slick';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { text } from '@fortawesome/fontawesome-svg-core';
-import ImageSlider from '../../assets/ImageSlider';
+// import { text } from '@fortawesome/fontawesome-svg-core';
+
 import { Flex, SimpleGrid, Text, VStack, Box, Image, Button } from '@chakra-ui/react';
+import { Carousel } from 'react-responsive-carousel';
 
 
 
@@ -28,11 +29,27 @@ const Home = () => {
                 <Box w="100%">
                     <Image objectFit='cover' width="100%" src='https://bluefly.com/cdn/shop/files/STEP_INTO_THE_SUN_-_BANNER_1200X200_1_1600x.jpg?v=1717717279'></Image>
                 </Box>
-                <div> <ImageSlider /> </div>
 
+
+                <div className="carousel-container">
+                    <Carousel infiniteLoop autoPlay showThumbs={false}>
+                        <div className=" carousel-slide">
+                            <img className='sliderImg1' src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26941890/2024/4/5/d87e974e-6b77-42d0-8006-bf310c759f8d1712302492366HMRegularFitT-Shirt1.jpg' alt="Image 1" />
+                            <div className="carousel-text">
+                                <h1 style={{color:'white',fontSize:"50px",fontFamily:"-moz-initial"}}>WORLD OF VELENTINO</h1>
+                            </div>
+                        </div>
+                        <div className=" carousel-slide">
+                            <img className='sliderImg1' src='https://www.bluefly.com/cdn/shop/files/Banner_2_300x.png' alt="Image 2" />
+                            <div className="carousel-text">Another Great Product</div>
+                        </div>
+                        <div className=" carousel-slide">
+                            <img className='sliderImg1' src='https://www.bluefly.com/cdn/shop/files/Banner_2_300x.png' alt="Image 3" />
+                            <div className="carousel-text">Yet Another Great Product</div>
+                        </div>
+                    </Carousel>
+                </div>
             </div>
-
-
 
 
 

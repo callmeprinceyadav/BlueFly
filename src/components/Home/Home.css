@@ -2,7 +2,7 @@
 .Head{
     /* border: 2px solid Black; */
     /* background-color: black; */
-    height: 100vh;
+    height: auto;
     text-align: center;
     margin: 0;
     font-size: 12px;
@@ -107,6 +107,34 @@
   discountoff{
     text-align: center;
   }
+
+  .carousel-container {
+    width: 90%;
+    position: relative;
+    overflow: hidden; 
+    margin: auto; 
+  }
+  
+  .carousel-container img {
+    width: 10px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .carousel-slide {
+    position: relative;
+  }
+  
+  .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
 
 
   @media (max-width: 768px) {
