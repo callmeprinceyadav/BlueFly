@@ -125,5 +125,9 @@
     .Category{
       display: none;
     }
+
+    .navbar__logo{
+      margin-top: 12px;
+    }
   }
   

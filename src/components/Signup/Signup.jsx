@@ -1,47 +1,55 @@
 import React, { useState } from 'react';
-import './Login.css'; // Import the CSS file
+import './Signup.css'; // Use the same CSS file
 import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const Signup = () => {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const navigate = useNavigate();
 
-  const handleSignup = () => {
-    navigate('/signup');
-  };
-
   const handleLogin = () => {
-    const storedEmail = localStorage.getItem('email');
-    const storedPassword = localStorage.getItem('password');
-
-    if (email === storedEmail && password === storedPassword) {
-      setError('');
-      alert('Login successful');
-      // Redirect or perform any further actions
-    } else {
-      setError('Invalid email or password');
-    }
+    navigate('/login');
   };
 
   const handleRegister = () => {
-    if (!email || !password) {
-      setError('Both fields are required');
+    if (!firstName || !lastName || !email || !password) {
+      setError('All fields are required');
       return;
     }
 
+    localStorage.setItem('firstName', firstName);
+    localStorage.setItem('lastName', lastName);
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
     setError('');
     alert('Registration successful');
+    navigate('/login');
   };
 
   return (
     <div className='mainbox'>
       <div className='formsection'>
-        <h1>LOGIN</h1>
+        <h1>SIGN UP</h1>
+        <label style={{ marginBottom:"-15px" }} htmlFor="FirstName">First Name</label>
+        <input
+          type="text"
+          placeholder='Enter Your First Name'
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          required
+        />
+        <label style={{ marginBottom:"-15px" }} htmlFor="LastName">Last Name</label>
+        <input
+          type="text"
+          placeholder='Enter Your Last Name'
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          required
+        />
         <label style={{ marginBottom:"-15px" }} htmlFor="Email">Email Address</label>
         <input
           type="email"
@@ -59,16 +67,13 @@ const Login = () => {
           required
         />
         {error && <div className='error'>{error}</div>}
-        <button  type='button' onClick={handleLogin}>
-          LOGIN
+        <button type='button' onClick={handleRegister}>
+          SIGN UP
         </button>
-        <h4 style={{ textAlign:"end", cursor:"pointer"}}>Forget Password ?</h4>
-        <h3 style={{ textAlign:"center", cursor:"pointer", fontFamily:"Tiemann, serif"}} type='button' onClick={handleSignup}>
-          Create New Account
-        </h3>
+        <h4 style={{ textAlign:"end", cursor:"pointer" }} onClick={handleLogin}>Already have an account? Login</h4>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Signup;

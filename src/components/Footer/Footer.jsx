@@ -4,6 +4,7 @@ import './Footer.css'; //
 const Footer = ()=>{
     return (
         <>
+        <hr/>
         <div className="footer">
         
                 <div className='footer_links'>
