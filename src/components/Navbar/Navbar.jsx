@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './Navbar.css'; // Import your CSS file for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
+import Signup from '../Signup/Signup';
 
 const Navbar = () => {
 
@@ -11,6 +12,9 @@ const Navbar = () => {
 
   const login = () => {
     navigate("/login");
+  };
+  const Signup  = () => {
+    navigate("/signup");
   };
   const logo = () => {
     navigate("/");
@@ -27,7 +31,7 @@ const Navbar = () => {
         <button className="navbar__icon-btn">
           <FontAwesomeIcon icon={faUser} />
         </button>
-        <button className="navbar__icon-btn">Sign Up</button>
+        <button className="navbar__icon-btn" onClick={Signup}>Sign Up</button>
         <button className="navbar__icon-btn" onClick={login}>Login</button>
         <button className="navbar__icon-btn">
           <FontAwesomeIcon icon={faShoppingCart} />

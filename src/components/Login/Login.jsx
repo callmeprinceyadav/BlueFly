@@ -16,33 +16,24 @@ const Login = () => {
   const handleLogin = () => {
     const storedEmail = localStorage.getItem('email');
     const storedPassword = localStorage.getItem('password');
+    const storedFirstName = localStorage.getItem('firstName');
 
     if (email === storedEmail && password === storedPassword) {
       setError('');
       alert('Login successful');
-      // Redirect or perform any further actions
+      // Store first name in session storage for display
+      sessionStorage.setItem('firstName', storedFirstName);
+      navigate('/homelog');
     } else {
       setError('Invalid email or password');
     }
-  };
-
-  const handleRegister = () => {
-    if (!email || !password) {
-      setError('Both fields are required');
-      return;
-    }
-
-    localStorage.setItem('email', email);
-    localStorage.setItem('password', password);
-    setError('');
-    alert('Registration successful');
   };
 
   return (
     <div className='mainbox'>
       <div className='formsection'>
         <h1>LOGIN</h1>
-        <label style={{ marginBottom:"-15px" }} htmlFor="Email">Email Address</label>
+        <label style={{ marginBottom: "-15px" }} htmlFor="Email">Email Address</label>
         <input
           type="email"
           placeholder='Enter Your Email'
@@ -50,7 +41,7 @@ const Login = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <label style={{ marginBottom:"-15px" }} htmlFor="Password">Password</label>
+        <label style={{ marginBottom: "-15px" }} htmlFor="Password">Password</label>
         <input
           type="password"
           placeholder='Enter Your Password'
@@ -59,11 +50,11 @@ const Login = () => {
           required
         />
         {error && <div className='error'>{error}</div>}
-        <button  type='button' onClick={handleLogin}>
+        <button type='button' onClick={handleLogin}>
           LOGIN
         </button>
-        <h4 style={{ textAlign:"end", cursor:"pointer"}}>Forget Password ?</h4>
-        <h3 style={{ textAlign:"center", cursor:"pointer", fontFamily:"Tiemann, serif"}} type='button' onClick={handleSignup}>
+        <h4 style={{ textAlign: "end", cursor: "pointer" }}>Forget Password ?</h4>
+        <h3 style={{ textAlign: "center", cursor: "pointer", fontFamily: "Tiemann, serif" }} type='button' onClick={handleSignup}>
           Create New Account
         </h3>
       </div>

@@ -32,21 +32,32 @@ const Home = () => {
 
 
                 <div className="carousel-container">
-                    <Carousel infiniteLoop autoPlay showThumbs={false}>
-                        <div className=" carousel-slide">
-                            <img className='sliderImg1' src='https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/26941890/2024/4/5/d87e974e-6b77-42d0-8006-bf310c759f8d1712302492366HMRegularFitT-Shirt1.jpg' alt="Image 1" />
-                            <div className="carousel-text">
-                                <h1 style={{color:'white',fontSize:"50px",fontFamily:"-moz-initial"}}>WORLD OF VELENTINO</h1>
+                <Carousel infiniteLoop autoPlay showThumbs={false}>
+                        {[
+                            {
+                                src: 'https://www.bluefly.com/cdn/shop/files/shutterstock_1112754335-REV_360x.jpg?v=1656342184',
+                                title: 'WORLD OF VALENTINO',
+                                button: 'SHOP Valentino'
+                            },
+                            {
+                                src: 'https://www.bluefly.com/cdn/shop/files/Banner_2_300x.png',
+                                title: 'UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS',
+                                button: 'SHOP JUMPSUITS'
+                            },
+                            {
+                                src: 'https://www.bluefly.com/cdn/shop/files/Tops_360x.jpg?v=1615206654',
+                                title: "UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES",
+                                button: 'SHOP PRADA'
+                            }
+                        ].map((slide, index) => (
+                            <div className="carousel-slide" key={index}>
+                                <img className='sliderImg1' src={slide.src} alt={`Slide ${index + 1}`} />
+                                <div className="carousel-text">
+                                    <h1 className='carousel-title'>{slide.title}</h1>
+                                    <button className='carousel-button'>{slide.button}</button>
+                                </div>
                             </div>
-                        </div>
-                        <div className=" carousel-slide">
-                            <img className='sliderImg1' src='https://www.bluefly.com/cdn/shop/files/Banner_2_300x.png' alt="Image 2" />
-                            <div className="carousel-text">Another Great Product</div>
-                        </div>
-                        <div className=" carousel-slide">
-                            <img className='sliderImg1' src='https://www.bluefly.com/cdn/shop/files/Banner_2_300x.png' alt="Image 3" />
-                            <div className="carousel-text">Yet Another Great Product</div>
-                        </div>
+                        ))}
                     </Carousel>
                 </div>
             </div>
@@ -63,11 +74,11 @@ const Home = () => {
 
                         <VStack>
 
-                            <Text as="b">Brown Stylish Tshirt</Text>
+                            <Text className='price' as="b">Brown Stylish Tshirt</Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
@@ -80,11 +91,11 @@ const Home = () => {
 
                         <VStack>
 
-                            <Text as="b">Premium Makeup Kit</Text>
+                            <Text className='price' as="b">Premium Makeup Kit</Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
 
                             </Flex>
 
@@ -98,11 +109,11 @@ const Home = () => {
 
                         <VStack>
 
-                            <Text as="b">Gucci SunGlasses For Unisex</Text>
+                            <Text className='price' as="b">Gucci SunGlasses For Unisex</Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
@@ -115,11 +126,11 @@ const Home = () => {
 
                         <VStack>
 
-                            <Text as="b">KENDRA SCOTT LOVE BRACELET</Text>
+                            <Text className='price' as="b">KENDRA SCOTT LOVE BRACELET</Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
@@ -133,11 +144,11 @@ const Home = () => {
 
                         <VStack>
 
-                            <Text as="b">WHITE MENS OUT OF OFFICE LOW-TOP SNEAKERS</Text>
+                            <Text className='price' as="b">WHITE MENS OUT OF OFFICE LOW-TOP SNEAKERS</Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
@@ -205,145 +216,100 @@ const Home = () => {
             </div>
 
 
-
-            <hr></hr>
-
+            <div className="carousel-container">
+            <Carousel infiniteLoop autoPlay showThumbs={false}>
+                        {[
+                            {
+                                src: 'https://www.bluefly.com/cdn/shop/files/shutterstock_1112754335-REV_360x.jpg?v=1656342184',
+                                title: 'WORLD OF VALENTINO',
+                                button: 'SHOP Valentino'
+                            },
+                            {
+                                src: 'https://www.bluefly.com/cdn/shop/files/Banner_2_300x.png',
+                                title: 'UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS',
+                                button: 'SHOP JUMPSUITS'
+                            },
+                            {
+                                src: 'https://www.bluefly.com/cdn/shop/files/Tops_360x.jpg?v=1615206654',
+                                title: "UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES",
+                                button: 'SHOP PRADA'
+                            }
+                        ].map((slide, index) => (
+                            <div className="carousel-slide" key={index}>
+                                <img className='sliderImg1' src={slide.src} alt={`Slide ${index + 1}`} />
+                                <div className="carousel-text">
+                                    <h1 className='carousel-title'>{slide.title}</h1>
+                                    <button className='carousel-button'>{slide.button}</button>
+                                </div>
+                            </div>
+                        ))}
+                    </Carousel>
+                    
+                </div>
             <div>
                 <h1 style={{ textAlign: 'center' }}>NEW ARRIVALS</h1>
                 <div className="grid-container">
-                    <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/1111652482_RLLZ_3_1800x1800.jpg?v=1709447010' />
-
-                        <VStack>
-
-                            <Text as="b">VALENTINO ROCKSTUD SMALL GRAINY LEATHER</Text>
-                            <Flex >
-                                <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
-                            </Flex>
-
-                        </VStack>
-
-
-                    </div>
+                    
                     <div class="product-item">
                         <img src='https://www.bluefly.com/cdn/shop/files/1511748040_RLLZ_1_1800x1800.jpg?v=1709088242' />
                         <VStack>
 
-                            <Text as="b">CHASER COLLARED SHIRT</Text>
+                            <Text className='price' as="b">CHASER COLLARED SHIRT</Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
 
                     </div>
-                    <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/4UjWEtZuXa2MJ7paHixZhyFEplxIaIo4-25_720x.jpg?v=1709328421' />
-
-                        <VStack>
-
-                            <Text as="b">PAM WOMENS ZIPPER RIBBED KNIT OVER-THE-KNEE BOOTS</Text>
-                            <Flex >
-                                <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
-                            </Flex>
-
-                        </VStack>
-
-                    </div>
-                    <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/1111480077_RLLZ_1_1800x1800.jpg?v=1708104072' />
-
-                        <VStack>
-
-                            <Text as="b">PRE-OWNED DIOR NAVY TROTTER CANVAS</Text>
-                            <Flex >
-                                <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
-                            </Flex>
-
-                        </VStack>
-                    </div>
+                    
+                    
 
                     <div class="product-item">
                         <img src='https://www.bluefly.com/cdn/shop/files/CT0151O-30003052-002__00287__1_96b8c668-7fcc-437a-bb4e-5ff980e71d29_1800x1800.jpg?v=1706256366' />
 
                         <VStack>
 
-                            <Text as="b">CARTIER WOMENS CAT EYE SILVER SILVER TRANSPARENT FASHION DESIGNER EYEWEAR</Text>
+                            <Text className='price' as="b">CARTIER WOMENS CAT EYE SILVER </Text>
                             <Flex >
-                                <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="del">$158</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
 
                     </div>
-                    <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/products/largeewb1489_720x.jpg?v=1677079896' />
-
-                        <VStack>
-
-                            <Text as="b">UNIQUE HUGE 5.00CT ROUND REAL DIAMOND </Text>
-                            <Flex >
-                                <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
-                            </Flex>
-
-                        </VStack>
-
-
-                    </div>
+                    
                     <div class="product-item">
                         <img src='https://www.bluefly.com/cdn/shop/files/1010833930_RLLZ_1_1800x1800.jpg?v=1708059863' />
 
                         <VStack>
 
-                            <Text as="b">CHANEL WOMEN'S BLACK KNITTED TOP </Text>
+                            <Text className='price' as="b">CHANEL WOMEN'S BLACK KNITTED TOP </Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
 
 
                     </div>
-                    <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/1111740955_RLLZ_1_1800x1800.jpg?v=1709467639' />
-
-                        <VStack>
-
-                            <Text as="b">SAINT LAURENT LOU MINI QUILTED LEATHER CAMERA BAG</Text>
-                            <Flex >
-                                <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
-                            </Flex>
-
-                        </VStack>
-
-
-                    </div>
+                    
                     <div class="product-item">
                         <img src='https://www.bluefly.com/cdn/shop/files/1313825997_RLLZ_1_720x.jpg?v=1709351444' />
 
                         <VStack>
 
-                            <Text as="b">WHITE MENS OUT OF OFFICE LOW-TOP SNEAKERS</Text>
+                            <Text className='price' as="b">WHITE MENS OUT OF OFFICE LOW-TOP SNEAKERS</Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
@@ -353,11 +319,11 @@ const Home = () => {
 
                         <VStack>
 
-                            <Text as="b">BURBERRY T-SHIRT</Text>
+                            <Text className='price' as="b">BURBERRY T-SHIRT</Text>
                             <Flex >
                                 <Text as="del">$158</Text>
-                                <Text as="b">$989.99</Text>
-                                <Text as="kbd" color="red">Save 75%</Text>
+                                <Text className='price' as="b">$989.99</Text>
+                                <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
 
                         </VStack>
