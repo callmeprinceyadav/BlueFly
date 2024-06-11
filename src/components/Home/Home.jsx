@@ -159,13 +159,13 @@ const Home = () => {
 
                 <div className='Showoff_section'>
                     <div className='showoff'>
-                        <img src='https://www.bluefly.com/cdn/shop/files/Bluefly_Tile_Refresh_2_300x.png' alt='' />
+                        <img src='https://www.bluefly.com/cdn/shop/files/Madaluxe_10.8.19_31943_1_300x.jpg?v=1712086097' alt='' />
                     </div>
                     <div className='showoff'>
-                        <img src='https://www.bluefly.com/cdn/shop/files/Banner_2_300x.png' alt='Seond promot' />
+                        <img src='https://www.bluefly.com/cdn/shop/files/VENDOR_ASSET_-Extra_15_Off_Select_Luxe_Staples_300x.png?v=1671459534' alt='Seond promot' />
                     </div>
                     <div className='showoff'>
-                        <img src='https://www.bluefly.com/cdn/shop/files/WEB_ASSET_2_300x.jpg' alt='Third promot' />
+                        <img src='https://www.bluefly.com/cdn/shop/files/WEB_ASSET_2_300x.jpg?v=1650894933' alt='Third promot' />
                     </div>
                 </div>
 
@@ -274,7 +274,7 @@ const Home = () => {
 
                             <Text className='price' as="b">CARTIER WOMENS CAT EYE SILVER </Text>
                             <Flex >
-                                <Text className='price' className='price' as="del">$158</Text>
+                                <Text className='price'  as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
