@@ -12,6 +12,8 @@
 
 .marquesection {
   background-color: black;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .marque {
@@ -111,7 +113,7 @@
   position: relative;
   overflow: hidden;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10;
 }
 
 .carousel-text > h1, h2, h3, h4 {
@@ -119,7 +121,7 @@
 }
 
 .carousel-text > button {
-  margin: 5px;
+  margin: 5;
   padding: 10px;
   border: 1px solid black;
   font-weight: 700;
@@ -183,65 +185,6 @@
   margin: 20px 0;
 }
 
-.product-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid #e2e2e2;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.product-item:hover {
-  transform: translateY(-5px);
-}
-
-.product-item img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.product-details {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.product-details b {
-  font-size: 18px;
-  
-}
-
-.product-details del {
-  color: #777;
-  font-size: 14px;
-  margin-right: 5px;
-}
-
-.product-details kbd {
-  color: red;
-}
-
-.product-details > Text{
-  margin: 10px;
-}
-
-
-.product-item button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.product-item button:hover {
-  background-color: #0056b3;
-}
-
 @media (max-width: 768px) {
   .grid-container {
       grid-template-rows: 2fr;
@@ -282,5 +225,21 @@
   .showoff > img{
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      padding: 10px;
+  }
+
+  .price{
+    font-size: 10px;
+  }
+
+  .category-container{
+    grid-template-columns: repeat(2, 1fr);
   }
 }

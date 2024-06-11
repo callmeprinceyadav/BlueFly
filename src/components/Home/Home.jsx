@@ -76,7 +76,7 @@ const Home = () => {
 
                             <Text className='price' as="b">Brown Stylish Tshirt</Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
@@ -93,7 +93,7 @@ const Home = () => {
 
                             <Text className='price' as="b">Premium Makeup Kit</Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
 
@@ -111,7 +111,7 @@ const Home = () => {
 
                             <Text className='price' as="b">Gucci SunGlasses For Unisex</Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
@@ -128,7 +128,7 @@ const Home = () => {
 
                             <Text className='price' as="b">KENDRA SCOTT LOVE BRACELET</Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
@@ -146,7 +146,7 @@ const Home = () => {
 
                             <Text className='price' as="b">WHITE MENS OUT OF OFFICE LOW-TOP SNEAKERS</Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
@@ -256,7 +256,7 @@ const Home = () => {
 
                             <Text className='price' as="b">CHASER COLLARED SHIRT</Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
@@ -274,7 +274,7 @@ const Home = () => {
 
                             <Text className='price' as="b">CARTIER WOMENS CAT EYE SILVER </Text>
                             <Flex >
-                                <Text className='price' as="del">$158</Text>
+                                <Text className='price' className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
@@ -290,7 +290,7 @@ const Home = () => {
 
                             <Text className='price' as="b">CHANEL WOMEN'S BLACK KNITTED TOP </Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
@@ -307,7 +307,7 @@ const Home = () => {
 
                             <Text className='price' as="b">WHITE MENS OUT OF OFFICE LOW-TOP SNEAKERS</Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
@@ -321,7 +321,7 @@ const Home = () => {
 
                             <Text className='price' as="b">BURBERRY T-SHIRT</Text>
                             <Flex >
-                                <Text as="del">$158</Text>
+                                <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
