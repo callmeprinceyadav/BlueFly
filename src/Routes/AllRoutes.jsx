@@ -20,7 +20,7 @@ const App = () => {
 
         {/* Add other routes here */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 };

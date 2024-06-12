@@ -1,6 +1,6 @@
 .footer{
     display: flex; 
-    width: 100%;
+    width: auto;
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
