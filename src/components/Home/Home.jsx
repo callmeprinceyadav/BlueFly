@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import { text } from '@fortawesome/fontawesome-svg-core';
 
-import { Flex, SimpleGrid, Text, VStack, Box, Image, Button } from '@chakra-ui/react';
+import { Flex, Text, VStack, Box, Image, Button } from '@chakra-ui/react';
 import { Carousel } from 'react-responsive-carousel';
 
 
@@ -73,6 +73,7 @@ const Home = () => {
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
                             </Flex>
+                            <Button colorScheme='blue' size='lg'>Add TO Cart</Button>
 
                         </VStack>
 
@@ -102,7 +103,7 @@ const Home = () => {
 
                         <VStack>
 
-                            <Text className='price' as="b">Gucci SunGlasses For Unisex</Text>
+                            <Text className='price' as="b">Gucci SunGlasses </Text>
                             <Flex >
                                 <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
@@ -114,12 +115,12 @@ const Home = () => {
                     </div>
 
                     <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/6030919092_RLLZ_1_1800x1800.jpg?v=1716225836' />
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTE8wPyuBY4HEr8jw9PZxRY5vDHQhvA4_rw&s' />
 
 
                         <VStack>
 
-                            <Text className='price' as="b">KENDRA SCOTT LOVE BRACELET</Text>
+                            <Text className='price' as="b">KENDRA BRACELET</Text>
                             <Flex >
                                 <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
@@ -131,13 +132,13 @@ const Home = () => {
                     </div>
 
                     <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/OMIA189S-LEA004-4501__40001__1_1800x1800.jpg?v=1716153613' />
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJO0Wgrt_HtRQ4IpXyJamljOV1vOPimzsGw&s' />
 
 
 
                         <VStack>
 
-                            <Text className='price' as="b">WHITE MENS OUT OF OFFICE LOW-TOP SNEAKERS</Text>
+                            <Text className='price' as="b">WHITE MENS SNEAKERS</Text>
                             <Flex >
                                 <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
@@ -175,30 +176,30 @@ const Home = () => {
             <div class="category-container">
                 {/* <!-- First row --> */}
                 <div className="category-item">
-                    <img src='https://www.bluefly.com/cdn/shop/files/601550-SCA06-1000__00002__1_1800x1800.jpg?v=1709386624' />
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI_lWFtFejZvUAcdw-7HLm8fyxEieor39qAA&s' />
                     <p>DRESSES</p></div>
                 <div className="category-item">
                     <img src='https://www.bluefly.com/cdn/shop/files/MA1635CC1G-MB0-000__00002__1_1800x1800.jpg?v=1709493142' />
                     <p>PUMPS & HEELS</p></div>
                 {/* <!-- Second row --> */}
                 <div className="category-item">
-                    <img src='https://www.bluefly.com/cdn/shop/files/8073151__00002__1_1800x1800.jpg?v=1707694343' />
+                    <img src='https://t4.ftcdn.net/jpg/05/66/24/29/360_F_566242900_9e07JauS5GGGuvwkLyMY92J0WVq8RXkh.jpg' />
                     <p>HANDBAGS</p></div>
                 <div className="category-item">
-                    <img src='https://ampere.shop/cdn/shop/files/Dusk-Blackframewithdarktint_polarizedlenses_969c55e5-54b3-44bc-ad49-3c0eac2e49f5_1100x.jpg?v=1704269504' />
+                    <img src='https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-black-sunglasses-eyewear-png-image_11671474.png' />
                     <p>SUNGLASSES</p></div>
                 <div className="category-item">
-                    <img src='https://www.bluefly.com/cdn/shop/files/WW0S0CS4-FAR-KM5__70002__1_1800x1800.jpg?v=1709389541' />
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8MHTbFzM-vj7TC4k8pZWiZ2yFdBKvs96q3w&s' />
                     <p>WOMEN'S SNEAKERS</p></div>
                 <div className="category-item">
-                    <img src='https://www.bluefly.com/cdn/shop/products/2019843_1800x1800.jpg?v=1679939033' />
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSZEmHE3pgXOA6coSMs5gnRtaqO1ASJs6WZg&s' />
                     <p> MEN'S SNEAKERS</p></div>
                 <div className="category-item">
-                    <img src='https://www.bluefly.com/cdn/shop/files/2134169_1800x1800.jpg?v=1703695623' />
+                    <img src='https://static.vecteezy.com/system/resources/thumbnails/026/146/466/small/men-t-shirt-mockup-isolated-on-transparent-background-white-color-ai-generative-png.png' />
                     <p>MEN'S T-SHIRTS</p></div>
                 {/* <!-- Second row --> */}
                 <div className="category-item">
-                    <img src='https://www.bluefly.com/cdn/shop/files/1411377971_RLLZ_1_1800x1800.jpg?v=1708734586' />
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa_nS16Ui1CjfdOOhFfOSndUhRHqNtumDYxQ&s' />
                     <p>WOMEN'S TOPS</p></div>
                 <div className="category-item">
                     <img src='https://www.bluefly.com/cdn/shop/files/1411803738_RLLZ_1_1800x1800.jpg?v=1708392634' />
@@ -244,7 +245,7 @@ const Home = () => {
                 <div className="grid-container">
                     
                     <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/1511748040_RLLZ_1_1800x1800.jpg?v=1709088242' />
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdaFuDqEcLvLKOKGrF4qT81LvtayT6KkDvQ&s' />
                         <VStack>
 
                             <Text className='price' as="b">CHASER COLLARED SHIRT</Text>
@@ -252,6 +253,7 @@ const Home = () => {
                                 <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
                                 <Text className='price' as="kbd" color="red">Save 75%</Text>
+                                
                             </Flex>
 
                         </VStack>
@@ -261,11 +263,11 @@ const Home = () => {
                     
 
                     <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/CT0151O-30003052-002__00287__1_96b8c668-7fcc-437a-bb4e-5ff980e71d29_1800x1800.jpg?v=1706256366' />
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAGHARsPsSX4GKWA-IT02oyjpJUhX4R2KOUA&s' />
 
                         <VStack>
 
-                            <Text className='price' as="b">CARTIER WOMENS CAT EYE SILVER </Text>
+                            <Text className='price' as="b">WOMENS CAT EYE  </Text>
                             <Flex >
                                 <Text className='price'  as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
@@ -277,11 +279,11 @@ const Home = () => {
                     </div>
                     
                     <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/1010833930_RLLZ_1_1800x1800.jpg?v=1708059863' />
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUWTjr2RuJJTe_fJyJ8UN-SN6_Fwr888b1Q&s' />
 
                         <VStack>
 
-                            <Text className='price' as="b">CHANEL WOMEN'S BLACK KNITTED TOP </Text>
+                            <Text className='price' as="b">WOMEN'S BLACK KNITTED TOP </Text>
                             <Flex >
                                 <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
@@ -294,11 +296,11 @@ const Home = () => {
                     </div>
                     
                     <div class="product-item">
-                        <img src='https://www.bluefly.com/cdn/shop/files/1313825997_RLLZ_1_720x.jpg?v=1709351444' />
+                        <img src='https://img.freepik.com/premium-photo/leather-grey-color-men-s-sneakers-with-white-lace-rubber-soles-isolated-white-background_250899-1233.jpg' />
 
                         <VStack>
 
-                            <Text className='price' as="b">WHITE MENS OUT OF OFFICE LOW-TOP SNEAKERS</Text>
+                            <Text className='price' as="b">BOYS SNEAKERS</Text>
                             <Flex >
                                 <Text className='price' as="del">$158</Text>
                                 <Text className='price' as="b">$989.99</Text>
