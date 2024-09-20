@@ -1,0 +1,36 @@
+.homelog{
+    width: 100%;
+    height: auto;
+}
+.header-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .welcome-text {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    font-size: 1rem; /* Adjust size as needed */
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .user-name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .name-highlight {
+    color: #ff5733; /* Change to your preferred color */
+    font-weight: bold;
+  }
+  

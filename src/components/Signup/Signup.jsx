@@ -21,6 +21,12 @@ const Signup = () => {
       return;
     }
 
+    const existingEmail = localStorage.getItem("email");
+    if (existingEmail === email) {
+      setError("This email is already registered");
+      return;
+    }
+
     localStorage.setItem('firstName', firstName);
     localStorage.setItem('lastName', lastName);
     localStorage.setItem('email', email);
